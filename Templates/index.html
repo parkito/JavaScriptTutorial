@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, HTML!</title>
+    <script>
+        function countToTen(){
+            var count = 0;
+            while (count < 15) {
+                count++;
+                document.getElementById("theCount").innerHTML +=
+                    count + "<br>";
+            }
+        }
+    </script>
+    <script>
+        document.write("yes")
+    </script>
+</head>
+<body onload="countToTen();">
+<h1>YES</h1>
+<p id="theCount"></p>
+</body>
+</html>
