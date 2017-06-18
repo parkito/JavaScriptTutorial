@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, HTML!</title>
+    <script>
+        function recursion(k) {
+            if (k > 1) {
+                return recursion(k - 1) + " " + k;
+            }
+            else {
+                return k + " ";
+            }
+        }
+    </script>
+    <script>
+        function my_fnk(n) {
+            document.write(recursion(n));
+        }
+    </script>
+</head>
+<body onload="my_fnk(10);">
+<h1>YES</h1>
+<p id="theCount"></p>
+</body>
