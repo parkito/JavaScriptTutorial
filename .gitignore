@@ -13,7 +13,6 @@ syntax: glob
 \.chg\..*$
 \.rej$
 \.conflict\~$
-
 *.class
 
 # Mobile Tools for Java (J2ME)
