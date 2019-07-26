@@ -1,4 +1,4 @@
-package ru.siksmfp.learn.concurrency.basic.exampl_01;
+package ru.siksmfp.learn.concurrency.basic.example_01;
 
 public class MyRunnable implements Runnable {
     private PingPong pingPong;

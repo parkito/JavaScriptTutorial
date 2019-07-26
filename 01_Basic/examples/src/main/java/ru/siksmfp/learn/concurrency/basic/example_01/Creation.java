@@ -1,4 +1,4 @@
-package ru.siksmfp.learn.concurrency.basic.exampl_01;
+package ru.siksmfp.learn.concurrency.basic.example_01;
 
 public class Creation {
 
@@ -19,5 +19,13 @@ public class Creation {
 
         runThread1.start();
         runThread2.start();
+
+        Runnable runnable = () -> {
+            System.out.println(Thread.currentThread().getName());
+        };
+
+        new Thread(runnable).start();
+
+//        new Thread(() -> System.out.println(Thread.currentThread().getName()));
     }
 }

@@ -1,4 +1,4 @@
-package ru.siksmfp.learn.concurrency.basic.exampl_01;
+package ru.siksmfp.learn.concurrency.basic.example_01;
 
 public class MyThread extends Thread {
     private PingPong pingPong;
