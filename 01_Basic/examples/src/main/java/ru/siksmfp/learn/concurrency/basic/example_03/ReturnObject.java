@@ -10,7 +10,17 @@ import java.util.concurrent.Future;
 
 public class ReturnObject {
     public static void main(String[] args) {
+        ReturnedThread returnedThread = new ReturnedThread();
+        new Thread(returnedThread).start();
+
+        System.out.println(returnedThread.getString());
+
+        Utils.sleepSeconds(3);
+
+        System.out.println(returnedThread.getString());
+
         ExecutorService executor = Executors.newSingleThreadExecutor();
+        
 
         Callable<String> callableTask = () -> {
             Utils.sleepSeconds(2);

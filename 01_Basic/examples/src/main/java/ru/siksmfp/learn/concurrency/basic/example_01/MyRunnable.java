@@ -1,16 +1,16 @@
 package ru.siksmfp.learn.concurrency.basic.example_01;
 
 public class MyRunnable implements Runnable {
-    private PingPong pingPong;
+    private UnsafePingPong unsafePingPong;
 
-    public MyRunnable(PingPong pingPong) {
-        this.pingPong = pingPong;
+    public MyRunnable(UnsafePingPong unsafePingPong) {
+        this.unsafePingPong = unsafePingPong;
     }
 
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {
-            pingPong.print();
+            unsafePingPong.print();
         }
     }
 }

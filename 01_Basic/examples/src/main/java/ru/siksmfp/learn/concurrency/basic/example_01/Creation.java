@@ -3,16 +3,16 @@ package ru.siksmfp.learn.concurrency.basic.example_01;
 public class Creation {
 
     public static void main(String[] args) {
-        PingPong pingPong = new PingPong();
+        UnsafePingPong unsafePingPong = new UnsafePingPong();
 
-        MyThread thread1 = new MyThread(pingPong);
-        MyThread thread2 = new MyThread(pingPong);
+        MyThread thread1 = new MyThread(unsafePingPong);
+        MyThread thread2 = new MyThread(unsafePingPong);
 
         thread1.start();
         thread2.start();
 
-        MyRunnable runnable1 = new MyRunnable(pingPong);
-        MyRunnable runnable2 = new MyRunnable(pingPong);
+        MyRunnable runnable1 = new MyRunnable(unsafePingPong);
+        MyRunnable runnable2 = new MyRunnable(unsafePingPong);
 
         Thread runThread1 = new Thread(runnable1);
         Thread runThread2 = new Thread(runnable2);
