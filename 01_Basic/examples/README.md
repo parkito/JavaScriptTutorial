@@ -10,3 +10,11 @@
 8) **example_08**  - Thread signalling, wait, notify
 9) **example_09**  - Deadlock, livelock, starvation
 19) **example_10**  - Daemon
+
+##Tasks
+
+1) Make server multithreaded. Process each connection in it's own thread.
+
+You can use the next command to send requests to server
+ 
+`echo "Some data to send" | nc localhost 59898 `
