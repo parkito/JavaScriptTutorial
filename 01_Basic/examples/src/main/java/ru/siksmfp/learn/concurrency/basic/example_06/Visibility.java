@@ -11,7 +11,6 @@ public class Visibility {
         Utils.sleepSeconds(1);
         unsafeLoopThread.isStopped = true;
 
-
         VolatileLoopThread volatileLoopThread = new VolatileLoopThread();
 
         new Thread(volatileLoopThread).start();
