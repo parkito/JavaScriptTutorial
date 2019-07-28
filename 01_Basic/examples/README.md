@@ -9,4 +9,4 @@
 7) **example_07**  - Instruction reordering
 8) **example_08**  - Thread signalling, wait, notify
 9) **example_09**  - Deadlock, livelock, starvation
-19) **example_10**  - Synchronized
+19) **example_10**  - Daemon
