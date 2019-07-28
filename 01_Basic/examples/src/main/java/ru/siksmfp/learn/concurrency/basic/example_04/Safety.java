@@ -18,5 +18,7 @@ public class Safety {
         for (int i = 0; i < 100; i++) {
             executor.execute(synchronizedPingPong::fullSyncPrint);
         }
+
+        executor.shutdown();
     }
 }

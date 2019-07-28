@@ -4,7 +4,7 @@
 2) **example_02**  - Stop threads, sleep
 3) **example_03**  - Create executors, callable
 4) **example_04**  - Synchronized
-5) **example_05**  - Synchronized
+5) **example_05**  - Atomicity, volatile, Atomic
 6) **example_06**  - Synchronized
 7) **example_07**  - Synchronized
 8) **example_08**  - Synchronized
