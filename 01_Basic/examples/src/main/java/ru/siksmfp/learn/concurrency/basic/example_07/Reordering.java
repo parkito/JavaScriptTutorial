@@ -52,7 +52,6 @@ public class Reordering {
 
                 System.out.println(state);
             }).start();
-
         }
 
         System.out.println("done");
