@@ -7,7 +7,7 @@ import java.net.Socket;
 
 public class MessageProcessor {
 
-    private static final String SUCCESS_RESPONSE = "Data received";
+    private static final String SUCCESS_RESPONSE = "Data processed successfully";
 
     private Socket socket;
 
@@ -19,8 +19,9 @@ public class MessageProcessor {
         try (BufferedInputStream bis = new BufferedInputStream(socket.getInputStream());
              PrintWriter pw = new PrintWriter(socket.getOutputStream(), true)) {
             String inputData = new String(bis.readAllBytes());
-            System.out.println(inputData);
+            System.out.println("Thread " + Thread.currentThread().getName() + " received data: " + inputData);
             pw.println(SUCCESS_RESPONSE);
+            pw.flush();
         } catch (IOException ex) {
             throw new IllegalStateException("Error occurred during message processing", ex);
         } finally {
