@@ -1,4 +1,4 @@
-##Examples
+## Examples
 
 1) **example_01**  - Run threads
 2) **example_02**  - Stop threads, sleep
@@ -11,7 +11,7 @@
 9) **example_09**  - Deadlock, livelock, starvation
 19) **example_10**  - Daemons
 
-##Tasks
+## Tasks
 
 *1)*  Make the server multithreaded. Process an each connection in it's own thread.
 You can use the next command to send requests to server
