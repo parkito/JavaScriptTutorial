@@ -1,4 +1,4 @@
-package ru.siksmfp.learn.concurrency.basic;
+package ru.siksmfp.learn.concurrency.intermediate;
 
 public class Main {
     public static void main(String[] args) {
