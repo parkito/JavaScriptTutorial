@@ -20,4 +20,4 @@ You can use the next command to send requests to server
 
 *2)* Fix program to make test successful 
 
-*3)* Make program faster using learned multithreaded methods 
+*3)* Make program faster using learned multithreaded methods

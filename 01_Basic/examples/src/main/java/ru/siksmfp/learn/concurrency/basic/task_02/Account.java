@@ -17,12 +17,12 @@ public class Account {
     }
 
     public void depositAmount(double amount) {
-        System.out.println("Account " + number + " depositing up to " + amount);
+        System.out.println("Account " + number + " depositing " + amount);
         balance = balance + amount;
     }
 
     public void withdrawAmount(double amount) {
-        System.out.println("Account " + number + " withdrawing down to " + amount);
+        System.out.println("Account " + number + " withdrawing " + amount);
         if (amount > balance) {
             throw new IllegalStateException("There is not enough money on balance");
         } else {
