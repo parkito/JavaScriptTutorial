@@ -1,7 +1,5 @@
 package ru.siksmfp.learn.concurrency.basic.example_07;
 
-import ru.siksmfp.learn.concurrency.basic.Utils;
-
 public class Reordering {
 
     static class State {
