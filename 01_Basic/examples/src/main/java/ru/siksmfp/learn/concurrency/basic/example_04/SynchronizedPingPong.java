@@ -5,15 +5,10 @@ public class SynchronizedPingPong {
 
     public synchronized void fullSyncPrint() {
         if (count % 2 == 0) {
-            System.out.print("ping ");
-            System.out.print(count);
+            System.out.println("ping " + count + " " + Thread.currentThread().getName());
         } else {
-            System.out.print("pong ");
-            System.out.print(count);
+            System.out.println("pong " + count + " " + Thread.currentThread().getName());
         }
-        System.out.print(" ");
-        System.out.println(Thread.currentThread().getName());
-        count++;
     }
 
     public void syncPrint() {
