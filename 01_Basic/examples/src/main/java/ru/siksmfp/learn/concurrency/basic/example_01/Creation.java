@@ -26,6 +26,6 @@ public class Creation {
 
         new Thread(runnable).start();
 
-//        new Thread(() -> System.out.println(Thread.currentThread().getName()));
+        new Thread(() -> System.out.println(Thread.currentThread().getName()));
     }
 }

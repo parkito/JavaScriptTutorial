@@ -20,17 +20,12 @@ public class Visibility {
 
         AtomicLoopThread atomicLoopThread = new AtomicLoopThread();
 
-        new Thread(atomicLoopThread).start();
 
-        Utils.sleepSeconds(1);
-        atomicLoopThread.isStopped.set(true);
-
-
-        SynchronizedLoopThread synchronizedLoopThread = new SynchronizedLoopThread();
-
-        new Thread(synchronizedLoopThread).start();
-
-        Utils.sleepSeconds(1);
-        synchronizedLoopThread.isStopped = true;
+//        SynchronizedLoopThread synchronizedLoopThread = new SynchronizedLoopThread();
+//
+//        new Thread(synchronizedLoopThread).start();
+//
+//        Utils.sleepSeconds(1);
+//        synchronizedLoopThread.isStopped = true;
     }
 }
