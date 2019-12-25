@@ -1,14 +1,12 @@
-package ru.siksmfp.learn.concurrency.intermediate.queue.blocking.blocking_deque;
+package ru.siksmfp.learn.concurrency.intermediate.queue.blocking.delay_queue;
 
-import org.jetbrains.annotations.NotNull;
 import ru.siksmfp.learn.concurrency.intermediate.Utils;
+import ru.siksmfp.learn.concurrency.intermediate.queue.Del;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.DelayQueue;
-import java.util.concurrent.Delayed;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 //Довольно специфичный класс, который позволяет вытаскивать элементы из очереди
 // только по прошествии некоторой задержки,
@@ -46,31 +44,6 @@ public class Add {
         });
 
         executorService.shutdown();
-    }
-
-    static class Del implements Delayed {
-
-        private int delay;
-
-        public Del(int delay) {
-            this.delay = delay;
-        }
-
-        //        Expiration occurs when an element's
-        //   {@code getDelay(TimeUnit.NANOSECONDS)}
-        @Override
-        public long getDelay(TimeUnit unit) {
-            return done ? -delay : delay;
-        }
-
-        public int getDelay() {
-            return delay;
-        }
-
-        @Override
-        public int compareTo(@NotNull Delayed o) {
-            return 0;
-        }
     }
 }
 
