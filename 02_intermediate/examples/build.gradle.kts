@@ -19,7 +19,7 @@ application {
 
 dependencies {
     compile(kotlin("stdlib"))
-    testCompile("org.junit.jupiter:junit-jupiter-engine:5.4.1")
+    compile("org.junit.jupiter:junit-jupiter-engine:5.4.1")
 }
 
 repositories {
